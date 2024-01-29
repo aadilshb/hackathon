@@ -1,0 +1,223 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* navbar */
+.header{
+    display: flex;
+    
+    background-color: #fca311;
+    height: 70px;
+    align-items: center;
+    width: 100%;
+}
+.logo{
+    height: 90px;
+    padding-left: 50px;
+}
+.navbar,li {
+   font-size: smaller;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    /* padding: 0px 10px; */
+    padding-top: 17px;
+    
+}
+.searchbar{
+    width: 30vw;
+    height: 20px;
+}
+li,a{
+
+    padding-left: 10px;
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+
+.navbar,li,a:hover{
+    color: rgb(0, 0, 0);
+    transition: ease-in;
+    
+}
+.navbar,.sign_up,.cart{
+    height: 60px;
+    /* width: ; */
+}
+.cart,.cart_img{
+    height: 50px;
+    width: 50px;
+}
+
+/* banner */
+
+.banner_text,button{
+    height: 30px;
+    width: 80px;
+}
+.banner_img2{
+    width: 50vw;
+    height: 100vh;
+}
+.banner2{
+    display: flex;
+}
+.banner2_text{
+    font-size: larger;
+    color: #E5E5E5;
+    background-color: #14213d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50vw;
+}
+/* banner 1 */
+.banner_img1{
+    width: 50vw;
+    height: 100vh;
+}
+.banner1{
+    display: flex;
+}
+.banner1_text{
+   text-align: center;
+   font-size: larger;
+    color: #E5E5E5;
+    background-color: #14213d;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50vw;
+}
+
+/* catalog preview */
+.background{
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#000000 ;
+}
+.about_us{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  /* background-color: #E5E5E5; */
+  
+  padding: 20px 20px 20px 20px;
+  height: 50vh;
+    /* height: 50vh; */
+    width: 90vw;
+    /* padding: 50px 50px 50px 50px; */
+}
+.about_us{
+    background-image: url(leaf.jpg);
+    height:50vh ;
+    width: 90vw;
+}
+.about_us_text{
+    text-align: center;
+    color: #E5E5E5;
+    font-size: 60px;
+    /* font-weight:; */
+    padding-bottom: 50px;
+}
+.abt{
+    color: #E5E5E5;
+    text-align: center;
+    font-size: 20px;
+}
+
+
+/* long banner */
+.long_banner{
+    /* border: 10px solid #E5E5E5; */
+    margin:  6px 0 6px 0;
+    height: 50vh;
+
+}
+.shirt{
+    height: 50vh;
+    width: 100vw;
+}
+/* footer */
+
+.footer{
+    background-color:#14213D;
+    height: 50vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.footer_logo{
+    padding-left: 80px;
+    height: 200px;
+    width: 200px;
+}
+
+.navlinks,li{
+    color: #cacaca;
+    font-size: larger;
+    margin-right: 90px;
+}
+.cont{
+    color: #E5E5E5;
+    font-size: medium;
+}
+.nvl{
+    color: #E5E5E5;
+    font-size: medium;
+}
+.contact,h2{
+    color:#fca311;
+    font-size: larger;
+}
+.navlinks,h2{
+    color: #fca311;
+    font-size: larger;
+}
+.banner1_text,button{
+    padding-top: 30px;
+}

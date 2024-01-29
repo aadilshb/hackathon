@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="login.css">
+  <title>Login</title>
+</head>
+<body>
+  
+  <div class="container">
+    
+    <div class=" header">
+      <h1>Login</h1>
+    </div>
+      <form id="login-form" onsubmit="return loginUser()" method="post">
+          
+          <div class="input-wrapper">
+              <label for="username">Username:</label>
+              <input type="text" id="username" name="username" required>
+          </div> 
+      
+          <div class="input-wrapper">
+              <label for="password">Password:</label>
+              <input type="password" id="password" name="password" required>
+          </div>
+          <div class="input-wrapper">
+              <label for="remember-me">Remember Me:</label>
+              <input type="checkbox" id="remember-me" name="remember-me">
+          </div>
+          <p>Dont have an account?<a href="signup.html">Sign up</a></p>
+          <!-- <p class="forgot-password"><a href="productcatalog.html">Forgot Password?</a></p> -->
+          <button type="submit" >Login</button>
+          <p class="validation-message" id="login-message"></p>
+      </form>
+  </div>
+  <script src="login.js"></script>
+</body>
+</html>
+
+<script>
+  function loginUser() {
+    
+    const user = document.getElementById('username').value;
+    const pass = document.getElementById('password').value;
+
+    
+    if (username === user && password === pass) {
+        
+        window.location.href = 'ecomm.html';
+      } else {
+        
+        document.getElementById('login-message').textContent = "Invalid username or password.";
+      }
+    
+    window.location.href = 'ecomm.html';
+
+    
+    return false;
+  }
+</script>

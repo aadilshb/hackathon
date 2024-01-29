@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="signup (1).css">
+  <title>Login</title>
+</head>
+<body>
+  
+  <div class="Sign_up">
+    
+    <div class="Sign_up1">
+      <h1>Signup</h1>
+    </div>
+    <form id="signup-form">
+      <div class="input-wrapper">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+      </div>
+      <div class="input-wrapper">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="input-wrapper">
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+      </div>
+      <div class="input-wrapper">
+        <label for="confirmpassword">Confirm Password:</label>
+        <input type="password" id="confirmpassword" name="confirmpassword" required>
+      </div>
+      
+      <button type="button" onclick="registerUser()">Register</button>
+      <p class="validation-message" id="registration-message"></p>
+    </form>
+  </div>
+
+  <script>
+    function registerUser() {
+      
+      const username = document.getElementById('username').value;
+      const email = document.getElementById('email').value;
+      const password = document.getElementById('password').value;
+      const confirmpassword = document.getElementById('confirmpassword').value;
+
+      
+      if (password !== confirmpassword) {
+        document.getElementById('registration-message').textContent = "Passwords do not match.";
+        return;
+      }
+
+      
+      const registrationDetails = {
+        username: username,
+        password: password,
+      
+      };
+
+      
+      sessionStorage.setItem('registrationDetails', JSON.stringify(registrationDetails));
+
+      
+      window.location.href = 'login.html';
+    }
+  </script>
+</body>
+</html>
